@@ -1,0 +1,26 @@
+{
+  "name": "the-social-network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annapng/Social-Network-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpick77/The-Social-Network/issues"
+  },
+  "homepage": "https://github.com/jpick77/The-Social-Network#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2",
+    "moongoose": "^0.0.5"
+  }
+}
