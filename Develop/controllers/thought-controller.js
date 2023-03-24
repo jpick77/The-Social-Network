@@ -16,7 +16,7 @@ module.exports = {
         .select('-__V')
         .then((thought) => (
             !thought
-                ? res.status(404).json({ message: 'No thought with that ID' })
+                ? res.status(404).json({ message: 'There is no thought with that ID' })
                 : res.json(thought)
             ))
             .catch((err) => {
@@ -47,7 +47,7 @@ module.exports = {
         )
             .then((thought) => (
                 !thought
-                    ? res.status(404).json({ message: 'No user with this id!' })
+                    ? res.status(404).json({ message: 'There is no user with this id!' })
                     : res.json(thought)
             ))
             .catch((err) => {
@@ -60,7 +60,7 @@ module.exports = {
         Thought.findOneAndDelete( { _id: req.params.id })
             .then((thought) =>
                 !thought
-                    ? res.status(404).json({ message: 'No Thought with that ID' })
+                    ? res.status(404).json({ message: 'There is no Thought with that ID' })
                     : res.json({ message: 'Thought deleted!' })
                 )
             .catch((err) => {
